@@ -57,7 +57,7 @@ jobs:
         fetch-depth: '0'
 
     - name: Bump version and push tag
-      uses: anothrNick/github-tag-action@1.55.0 # Don't use @master unless you're happy to test the latest version
+      uses: popsa-hq/github-tag-action@1.55.0 # Don't use @master unless you're happy to test the latest version
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         WITH_V: true
@@ -124,20 +124,7 @@ If `#none` is contained in the merge commit message, it will skip bumping regard
   - If triggered on your repo's default branch (`master` or `main` if unchanged), the bump version will be a release tag.
   - If triggered on any other branch, a prerelease will be generated, depending on the bump, starting with `*-<PRERELEASE_SUFFIX>.1`, `*-<PRERELEASE_SUFFIX>.2`, ...
 
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
-
 ## Credits
 
 - [fsaintjacques/semver-tool](https://github.com/fsaintjacques/semver-tool)
 - [Contributors to this project](https://github.com/anothrNick/github-tag-action/graphs/contributors)
-
-## Projects using github-tag-action
-
-Examples of projects using github-tag-action for reference.
-
-- another/github-tag-action (uses itself to create tags)
-- [anothrNick/json-tree-service](https://github.com/anothrNick/json-tree-service)
-
-  > Access JSON structure with HTTP path parameters as keys/indices to the JSON.
