@@ -25,7 +25,7 @@ jobs:
       uses: popsa-hq/github-tag-action@master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        WITH_V: true
+        WITH_V: false
 ```
 
 ```yaml
@@ -49,8 +49,9 @@ jobs:
     - name: Bump version and push tag
       uses: popsa-hq/github-tag-action@master
       env:
+        RELEASE_BRANCHES: main
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        WITH_V: true
+        WITH_V: false
 ```
 
 Depending if you choose example 1 or example 2 is how crafted version bumps operate when reading the commit log.
