@@ -6,8 +6,6 @@ A Github Action to automatically bump and tag master, on merge, with the latest 
 
 ## Usage
 
-_Note: We don't recommend using the @master version unless you're happy to test the latest changes._
-
 ```yaml
 # example 1: on push to master
 name: Bump version
