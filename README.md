@@ -36,7 +36,7 @@ on:
     types:
       - closed
     branches:
-      - master
+      - main
 jobs:
   build:
     runs-on: ubuntu-22.04
