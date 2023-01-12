@@ -1,7 +1,7 @@
 FROM node:16-alpine
-LABEL "repository"="https://github.com/anothrNick/github-tag-action"
-LABEL "homepage"="https://github.com/anothrNick/github-tag-action"
-LABEL "maintainer"="Nick Sjostrom"
+LABEL "repository"="https://github.com/popsa-hq/github-tag-action"
+LABEL "homepage"="https://github.com/popsa-hq/github-tag-action"
+LABEL "maintainer"="Popsa"
 
 RUN apk --no-cache add bash git curl jq && npm install -g semver
 
